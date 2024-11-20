@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Kiểm tra xem npm đã được cài đặt chưa
-# if ! command -v npm &> /dev/null
-# then
-#     echo "npm chưa được cài đặt. Vui lòng cài đặt Node.js và npm trước khi chạy script này."
-#     exit 1
-# fi
+Kiểm tra xem npm đã được cài đặt chưa
+if ! command -v npm &> /dev/null
+then
+    echo "npm chưa được cài đặt. Vui lòng cài đặt Node.js và npm trước khi chạy script này."
+    exit 1
+fi
 
-# # Cài đặt các dependencies nếu chưa có
-# echo "Đang kiểm tra và cài đặt các dependencies cần thiết..."
-# npm install
+# Cài đặt các dependencies nếu chưa có
+echo "Đang kiểm tra và cài đặt các dependencies cần thiết..."
+npm install
 
-# # Chạy ứng dụng CLI
-# echo "Đang chạy ứng dụng CLI..."
+# Chạy ứng dụng CLI
+echo "Đang chạy ứng dụng CLI..."
 node main.js ijhz 5432
